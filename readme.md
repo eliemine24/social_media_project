@@ -26,13 +26,10 @@ We want to make an app that fetches AI-content on social media (instagram for AI
 
 ## Back
 
-Script fetching content referenced as AI content to show to the user.
-
-Script updtating the DB with classified content information.
-
-DB referencing the content that has been whatched and classified in tables : 
-
-- general : contains all the posts. columns : post's url, publication date, duration, number of views, likes, comments, shares (including republications), hastags and categories
-- specific : one for each categories with the same columns
+- Script fetching content referenced as AI content to show to the user.
+- Script updtating the DB with classified content information.
+-DB referencing the content that has been whatched and classified in tables : 
+	- general : contains all the posts. columns : post's url, publication date, duration, number of views, likes, comments, shares (including republications), hastags and categories
+	- specific : one for each categories with the same columns
 
 and that approximatively all that I could thin of. 
