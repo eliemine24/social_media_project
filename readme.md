@@ -2,7 +2,7 @@
 
 please note that this readme is temporary.
 
-We want to make an app that fetches AI-content on social media (instagram for AI referencing), and show it to you on a nice looking interface. From this interface/page and by seeing the content, you can classify it in pre-existent categories by clicking on buttons and then confirming your selection (this allows you to put the content in more than 1 category). Once you click on, say, "validate", the back-end update a database referencing what post goes in what categories, and immediatly skips to the next post to classify. 
+We want to make a **web-app** that fetches AI-content on social media (instagram for AI referencing), and show it to you on a nice looking interface. From this interface/page and by seeing the content, you can classify it in pre-existent categories by clicking on buttons and then confirming your selection (this allows you to put the content in more than 1 category). Once you click on, say, "validate", the back-end update a database referencing what post goes in what categories, and immediatly skips to the next post to classify. 
 
 ## Front
 
