@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
 
-function App() {
+export default function App(){
+
+  const [count, setCount] = useState(5);
+
+  function handleClick(){
+
+    if (count > 0) { setCount(count - 1) }
+    else {setCount("STOOOP")}
+  }
+
+  //====================
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Décompte enfaitent</h1>
+      <Boutton count={count} onClick={handleClick} />
+      <Boutton count={count} onClick={handleClick} />
+      <Alerte />
     </div>
+  )
+}
+
+function Alerte() {
+  function handleClick() {
+    alert('You clicked me!');
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
   );
 }
 
-export default App;
+function Boutton({count, onClick}){
+
+  return (
+    <button onClick={onClick}>
+      décompte : {count}
+    </button>
+  )
+}
