@@ -1,44 +1,20 @@
 import { useState } from 'react';
+import { View } from './View';
+
+const image = {
+  url: "https://www.instagram.com/p/DfdEq5Dx8kY/?utm_source=ig_web_copy_link&xtok=NTc4MTIwNjQ2YQ=="
+}
 
 export default function App(){
 
-  const [count, setCount] = useState(5);
-
-  function handleClick(){
-
-    if (count > 0) { setCount(count - 1) }
-    else {setCount("STOOOP")}
-  }
-
-  //====================
-
   return (
-    <div>
-      <h1>Décompte enfaitent</h1>
-      <Boutton count={count} onClick={handleClick} />
-      <Boutton count={count} onClick={handleClick} />
-      <Alerte />
-    </div>
+    <>
+      <h1>Title</h1>
+      <img
+      src={image.url}
+
+      />
+    </>
   )
 }
 
-function Alerte() {
-  function handleClick() {
-    alert('You clicked me!');
-  }
-
-  return (
-    <button onClick={handleClick}>
-      Click me
-    </button>
-  );
-}
-
-function Boutton({count, onClick}){
-
-  return (
-    <button onClick={onClick}>
-      décompte : {count}
-    </button>
-  )
-}

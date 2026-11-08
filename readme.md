@@ -14,6 +14,12 @@ For any user of social media, it is impossible not to see that Ai-generated cont
 
 We will study mainly french and francophone content. **Details later in the semester**
 
+## Social Media : Why Instagram ?
+
+- AI referencement 
+- knowledge of the app
+- wide use of the app
+
 ## Classification startegy
 
 The first strategy was to manage to code a fully automated program to sort posts based on it's hashtags, but it early became obvious that this method wouldn't lead to relevant classification, taken into account many factors : 
@@ -23,8 +29,6 @@ The first strategy was to manage to code a fully automated program to sort posts
 - major presence of sarcasm and irony on social media, *and maybe especially in french culture*, which cannot be understood by such algorithm
 
 To face this issue, we decided to use a quiet simple but efficient method : ask humans to sort the content themselves. *give arguments for such decision* 
-
-
 
 # The App
 
@@ -56,7 +60,7 @@ We want to make a **web-app** that fetches AI-content on social media (instagram
 
 - Script fetching content referenced as AI content to show to the user.
 - Script updtating the DB with classified content information.
--DB referencing the content that has been whatched and classified in tables : 
+- DB referencing the content that has been whatched and classified in tables : 
 	- general : contains all the posts. columns : post's url, publication date, duration, number of views, likes, comments, shares (including republications), hastags and categories
 	- specific : one for each categories with the same columns
 
