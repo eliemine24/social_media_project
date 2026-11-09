@@ -1,7 +1,10 @@
-import { useState } from 'react';
+// Model.jsx
+// App's data
 
 
 export const Categories = [
+    // categories for content classification
+
     "humor",
     "fiction",
     "visual CRAP",
@@ -14,12 +17,3 @@ export const Categories = [
     "right",
     "far-right"
 ]
-
-export function contentFetch() {
-
-}
-
-function generateRequest() {
-
-
-}
