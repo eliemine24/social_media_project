@@ -65,3 +65,9 @@ We want to make a **web-app** that fetches AI-content on social media (instagram
 	- specific : one for each categories with the same columns
 
 and that approximatively all that I could thin of. 
+
+
+## APis
+
+- https://github.com/senthilsweb/instagram-scraper (seems free)
+- https://apify.com/apify/instagram-reel-scraper (2.60$/1000 requests)
